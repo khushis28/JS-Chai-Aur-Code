@@ -69,5 +69,56 @@
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(typeof stringNumber);
-console.log(stringNumber);
+// console.log(typeof stringNumber);
+// console.log(stringNumber);
+
+
+
+// ***********OPERATIONS***********
+//Most important ones
+let value = 4
+let negVal = -value
+// console.log(negVal);  //gives -4
+
+//basic mathematical operations
+// console.log(2+2);  //4
+// console.log(2-2);  //0
+// console.log(2*5);  //10, multiply
+// console.log(2**3); //8, power of
+// console.log(2/3);  //0.666666... , division
+// console.log(2%3);  //2, remainder
+
+
+//some more operations
+//concatenation of string, no subtraction
+let str1 = "hello"
+let str2 = " khushi"
+let str3= str1 + str2
+// console.log(str3);
+
+//not preferred or completely avoid such operations below:
+// console.log("1" + 2); //12, if first value is string, then it will be prioritized and rest number will also be treated as string
+// console.log(1 + "2"); //12
+// console.log("1" + 2 + 2); //122
+// console.log(1 + 2 + "2"); //32, if first value is number then 'number' value will be prioritized and solved, then string will be attached to it
+
+//tricky conversions
+// console.log(+true); //1, not preferred, no code readability
+// console.log(true+); //throws error, not preferred
+// console.log(+""); //false
+
+// Note: Operator precedence not used or useful in production level CommandEvent //
+
+//tricky behaviour of assigning value
+let num1, num2, num3
+num1 = num2= num3 = 2 + 2 //assigns same value to all variables, but no code readability
+
+//increment operator
+let gameCounter = 100
+gameCounter++;   //postfix -> value increments after execution/usage
+console.log(gameCounter); //101
+
+++gameCounter; //prefix -> value increments before execution/usage
+console.log(gameCounter); //101
+
+//Read about prefix, postfix on JS MDN docs
