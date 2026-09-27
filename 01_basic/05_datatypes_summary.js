@@ -81,5 +81,7 @@ Boolean - "boolean"
 Number - "number"
 String - "string"    
 Function - gives "function", also known as 'function object (function that is also an object)'   
-Symbol - "symbol"     */
-
+Symbol - "symbol"     
+BigInt - "bigint"
+Class - "function" 
+NaN - "number"  */
